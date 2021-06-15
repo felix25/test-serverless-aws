@@ -24,7 +24,8 @@ for more information about credential settings.
 ## POST
 
 >https://6li64h6nc3.execute-api.us-east-2.amazonaws.com/dev/star-wars/create
->REQUEST
+
+>Request
 ```
 {
   "page": 1 
