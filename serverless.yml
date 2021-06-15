@@ -25,18 +25,17 @@ provider:
   runtime: nodejs10.x
   region: us-east-2
   profile: practica
-  account: 152448423828
+  account: {account}
   enableSwagger: false
   iamRoleStatements:
     -  Effect: "Allow"
        Action:
          - "dynamodb:BatchWriteItem"
          - "dynamodb:scan"
-       Resource: "arn:aws:dynamodb:us-east-2:152448423828:table/starwars"
+       Resource: "arn:aws:dynamodb:us-east-2:{account}:table/starwars"
 
 plugins:
   - serverless-offline
-  - '@tfso/serverless-swaggerui'
 # you can overwrite defaults here
 #  stage: dev
 #  region: us-east-1
@@ -161,7 +160,3 @@ functions:
 #     NewOutput:
 #       Description: "Description for the output"
 #       Value: "Some output value"
-custom:
-  swagger:
-    swaggerfile: swagger.json # Set the swaggerfile to include.  Default is swagger.json
-    path: swagge
