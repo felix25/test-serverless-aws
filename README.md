@@ -14,3 +14,19 @@ For a more permanent solution you can also set up credentials through AWS profil
 Take a look at the
 [`config` CLI reference](https://github.com/serverless/serverless/blob/fb7324d271ed663a1dcd8cc93241fc6bf6726812/docs/providers/aws/cli-reference/config-credentials.md)
 for more information about credential settings.
+
+### invoke
+
+## GET
+
+>https://6li64h6nc3.execute-api.us-east-2.amazonaws.com/dev/list/all
+
+## POST
+
+>https://6li64h6nc3.execute-api.us-east-2.amazonaws.com/dev/star-wars/create
+>REQUEST
+```
+{
+  "page": 1 
+}
+```

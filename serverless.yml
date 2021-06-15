@@ -25,14 +25,14 @@ provider:
   runtime: nodejs10.x
   region: us-east-2
   profile: practica
-  account: {account}
+  account: 152448423828
   enableSwagger: false
   iamRoleStatements:
     -  Effect: "Allow"
        Action:
          - "dynamodb:BatchWriteItem"
          - "dynamodb:scan"
-       Resource: "arn:aws:dynamodb:us-east-2:{account}:table/starwars"
+       Resource: "arn:aws:dynamodb:us-east-2:152448423828:table/starwars"
 
 plugins:
   - serverless-offline
